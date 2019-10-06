@@ -1,14 +1,13 @@
 ## Begin at terminal
 
+...in your terminal...
 
-download this app
+git clone https://github.com/nwheatle/app.git
 
-cd app
+\$ cd app
 
-npm install
+\$ npm install
 
-npm start
-
+\$ npm start
 
 then, go to your chrome browser http://localhost:4000
-
