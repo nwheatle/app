@@ -1,10 +1,12 @@
 ## Begin at terminal
 
 
-download the app folder
+download this app
 
 cd app
+
 npm install
+
 npm start
 
 
