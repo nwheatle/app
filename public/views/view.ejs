@@ -4,14 +4,21 @@
             socket connection
         </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
 
     <body>
 
         <h2>Refreshing page increases number of 'connect' even emits each time? </h2>
+        <button type="button" id="emitter">Emit Signal To Server</button>
 
-        <script src="/socket.io/socket.io.js"></script>
         <script>
             var socket = io.connect("/");
+
+            $('#emitter').click(e => {
+                console.log("Emitter button was clicked");
+                socket.emit('signal', {data: "data"});
+                })
+
         </script>
 
     </body>
